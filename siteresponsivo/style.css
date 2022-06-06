@@ -1,0 +1,261 @@
+body{
+    font-family:'Nunito', sans-serif;
+    color: #1c1c1c;
+}
+
+h1,h2,h3{
+    font-family:  'O mais rápido possível', sans-serif;
+    color: #000000;
+}
+.botao{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+   
+    border-radius: 3px;
+}
+
+/*Navegação*/
+
+nav{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #191970;
+}
+
+nav> a {
+    text-decoration: none;
+    color: #ffffff;
+   font-weight: 800;
+    font-size: 32px;
+    font-family: 'Yellowtail',serif ;
+}
+
+nav ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: 0;
+    width: 100%;
+
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+
+
+
+}
+
+nav ul li a{
+    display:inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(tech-g62d1bd7e5_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #ffffff;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: 1#191970;
+color: black;
+}
+
+#sobre h2{
+    color: #ffffff;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: #191970;
+    color: #ffffff;
+}
+
+/*Serviços*/
+
+#vejamais.html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+#vejamais.html div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+ /*Fotos*/
+    #fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    #fotos h2{
+        margin-bottom: 20px;
+
+    }
+
+    #fotos img{
+        width: 100%;
+
+    }
+
+    /*contato*/
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    #contato h2{
+        color: #000000;
+    }
+
+    /*rodapé*/
+
+    footer{
+        text-align: center;
+        padding-top: 10px;
+        background-color: #191970;
+        color: #ffffff;
+        height: 70px;
+        width: 100%;
+        float: left;
+    }
+
+     footer a {
+        text-decoration: none;
+        color: #00ffff;
+     }
+   
+    @media screen and  (min-width: 768px)
+        
+    {
+    
+
+     /*nav*/
+
+     nav {
+        flex-direction: row;
+        justify-content: space-around;
+     }
+
+     nav ul{
+        flex-direction: row;
+        width: 70%;
+     }
+
+      /*Cabeçalho*/
+
+     header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+     }
+
+      #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+
+     }
+
+     /*serviços*/
+
+     #Serviços {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+     }
+      #Serviços h2 {
+       width: 100%;
+        text-align: center;
+       
+     }
+
+     #Serviços div {
+        width: 200px;
+        height: 200px;
+        margin: 60px;
+        float: right;
+
+     }
+        /*fotos*/
+
+        #fotos {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        #fotos h2 {
+          width: 100%;
+            text-align: center;
+        }
+
+        #fotos img {
+            width: 33.3333333%;
+        }
+
+        /*Contato*/
+
+        #contato {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contato h2, #contato p {
+            width: 100%;
+        }
+    }
+
